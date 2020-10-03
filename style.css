@@ -1,0 +1,136 @@
+:root{
+    --colour0: #262626;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 15px 0;
+    font-size: 13px;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    
+}
+
+ul{
+    
+}
+
+a{
+    text-decoration: none;
+    color: var(--colour0);
+}
+
+li{
+    list-style: none;
+    display: inline-block;
+}
+/* Nav */
+
+.main-nav .img-logo{
+    width: 110px;
+}
+.main-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-nav ul{
+    display: flex;
+    
+}
+.main-nav ul li{
+    padding: 0 10px;
+}
+
+.main-nav ul li a{
+    padding-bottom: 2px;
+}
+
+.main-menu{
+    flex: 1;
+    margin-left: 20px;
+}
+
+.main-menu li a:hover{
+    border-bottom: 2px solid var(--colour0);
+}
+
+.dropdown{
+    margin-right: 30px;
+    padding-bottom: 2px;
+}
+
+/* Icon */
+.ms-Icon{
+    font-size: 1rem;
+}
+
+.ms-Icon--ChevronDown{
+    font-size: 8px;
+    margin-left: 2.5px;
+}
+
+.dropdown a:hover{
+    border-bottom: 2px solid var(--colour0);
+}
+
+/* Button */
+
+.btn{
+    padding: 12px 28px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.btn .ms-Icon{
+    font-weight: 600;
+    font-size: 11px;
+    margin-left: 3px;
+}
+
+.btn:hover{
+    opacity: 0.9;
+}
+
+.btn .ms-Icon .ms-Icon--ChevronRight:hover{
+    margin-left: 12px;
+    opacity: 0.9;
+}
+/* Showcase */
+
+.showcase{
+    margin-top: 20px;
+    height: 400px;
+    background: url(/img/microsoft-img-01.jfif) no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 0 70px;
+}
+
+.showcase h2{
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-size: 23px;
+}
+
+.showcase p{
+    margin-right: 620px;
+    font-size: 15px;
+}
