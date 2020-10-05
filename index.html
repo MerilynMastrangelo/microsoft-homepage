@@ -12,9 +12,12 @@
 />
 </head>
 <body>
+    <div class="burger">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
     <div class="container">
         <nav class="main-nav">
-            <img src="/img/logo.png" alt="Microsoft" class="img-logo">
+            <a href=""><img src="/img/logo.png" alt="Microsoft" class="img-logo"></a>
             <ul class="main-menu">
                 <li><a href="">Microsoft 365</a></li>
                 <li><a href="">Office</a></li>
@@ -32,10 +35,14 @@
                 <li><a href=""><i class="ms-Icon ms-Icon--ShoppingCart" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
-        <header class="showcase">
-            <h2>New Surface Laptop Go</h2>
-            <p>Make the most of every day with our  lightest Surface laptop. Trade in an eligible device and get up to £500 back*</p>
-            <a href="" class="btn">Pre-order now <i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i></a>
+        <header>
+            <div class="showcase">
+                <div>
+                    <h2>New Surface Laptop Go</h2>
+                    <p>Make the most of every day with our  lightest Surface laptop. Trade in an eligible device and get up to £500 back*</p>
+                    <a href="" class="btn"><span>Pre-order now</span><i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i></a>
+                </div>
+            </div>
         </header>
         <section id="primaryArea">
             <ul class="menu-icons">
@@ -75,11 +82,13 @@
             </div>
         </section>
         <section id="xbox">
-            <div class="content">
-                <h2>Xbox Game Pass Ultimate</h2>
-                <p>Xbox Live Gold and over 100 high-quality console and PC games.</p>
-                <p>Play together with friends and discover your next favourite game.</p>
-                <a href="" class="btn">Join now<i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i></a>
+            <div class="xbox">
+                <div class="content">
+                    <h2>Xbox Game Pass Ultimate</h2>
+                    <p>Xbox Live Gold and over 100 high-quality console and PC games.</p>
+                    <p>Play together with friends and discover your next favourite game.</p>
+                    <a href="" class="btn"><span>Join now</span><i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i></a>
+                </div>
             </div>
         </section>
         <section id="home-cards-02">
@@ -114,12 +123,13 @@
         <section class="follow">
             <p>Follow Microsoft</p>
             <ul class="social">
-                <li><a href=""><img src="img/social-fb.png" alt=""></a></li>
-                <li><a href=""><img src="img/social-twitter.png" alt=""></a></li>
-                <li><a href=""><img src="img/social-yt.png" alt=""></a></li>
-                <li><a href=""><img src="img/social-insta.png" alt=""></a></li>
+                <li><a href="https://facebook.com/"><img src="img/social-fb.png" alt=""></a></li>
+                <li><a href="https://twitter.com/"><img src="img/social-twitter.png" alt=""></a></li>
+                <li><a href="https://youtube.com/"><img src="img/social-yt.png" alt=""></a></li>
+                <li><a href="https://www.instagram.com/"><img src="img/social-insta.png" alt=""></a></li>
             </ul>
         </section>
+    </div>
         <section class="links">
             <div class="links-inner">
                 <ul>
@@ -130,7 +140,6 @@
                     <li><a href="#">Surface Book 3</a></li>
                     <li><a href="#">Microsoft 365</a></li>
                     <li><a href="#">Windows 10 apps</a></li>
-                   
                 </ul>
                 <ul>
                     <li><h3>Microsoft Store</h3></li>
@@ -183,7 +192,9 @@
         <footer class="footer">
             <div class="footer-inner">
                 <div><i class="fa fa-globe fa-2x"></i>
+                <a href="">
                     English (United Kingdom)
+                </a>
                 </div>
                 <ul>
                     <li><a href="#">Contact Microsoft</a></li>
@@ -194,10 +205,12 @@
                     <li><a href="#">About our ads</a></li>
                     <li><a href="#">EU Compliance DoCs</a></li>
                     <li><a href="#">Regulatory reporting</a></li>
-                    <li><a href="#">&copy; Microsoft 2020</a></li>
+                    <li>&copy; Microsoft 2020</li>
                   </ul>
             </div>
         </footer>
-    </div>
+        <script>
+            document.querySelector('.burger').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+        </script>
 </body>
 </html>

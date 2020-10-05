@@ -3,6 +3,7 @@
     --colour1: #0067B8;
     --colour2: #616161;
     --colour3: #F2F2F2;
+    --colour4: #E6E6E6;
 }
 
 *{
@@ -14,19 +15,13 @@
 body{
     line-height: 1.5;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 15px 0;
+    margin-top: 15px;
     font-size: 13px;
 }
 
 .container{
-    width: 95%;
     max-width: 1200px;
     margin: auto;
-    
-}
-
-ul{
-    
 }
 
 a{
@@ -40,18 +35,19 @@ li{
 }
 /* Nav */
 
-.main-nav .img-logo{
+a .img-logo{
     width: 110px;
+    cursor: pointer;
 }
 .main-nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 20px;
 }
 
 .main-nav ul{
     display: flex;
-    
 }
 .main-nav ul li{
     padding: 0 10px;
@@ -100,31 +96,45 @@ li{
     margin-top: 20px;
 }
 
-.btn .ms-Icon{
+.btn i{
     font-weight: 600;
     font-size: 11px;
-    margin-left: 3px;
+    margin-left: 10px;
+
 }
 
-.btn:hover{
+.btn:hover span, .btn:hover{
     opacity: 0.9;
+    border-bottom: 2px solid #fff;
 }
 
 .btn .ms-Icon .ms-Icon--ChevronRight:hover{
     margin-left: 12px;
     opacity: 0.9;
 }
+
+.burger{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    z-index: 2;
+    display: none;
+}
+
+
 /* Showcase */
 
 .showcase{
     margin-top: 20px;
     height: 400px;
     background: url(/img/win-img-01.jfif) no-repeat center center/cover;
+    width: 100%;
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     justify-content: center;
-    padding: 0 70px;
+    align-items: center;
 }
 
 .showcase h2{
@@ -162,6 +172,10 @@ li{
     word-wrap: break-word;
     text-align: center;
     line-height: 1.2;
+}
+
+.menu-icons li a:hover{
+    text-decoration: underline;
 }
 
 .menu-icons li img{
@@ -225,7 +239,7 @@ li{
 }
 
 /* Xbox */
-#xbox{
+.xbox{
     margin: 60px 0;
     height: 450px;
     background: url(/img/xbox-fullImg.png) no-repeat center center/cover;
@@ -236,8 +250,6 @@ li{
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    width: 40%;
-    padding: 150px 0 0 80px;
 }
 
 /* Home Cards 02 */
@@ -252,6 +264,7 @@ li{
 }
 
 /* Social Medias */
+
 .follow{
     margin: 15px 0;
     display: flex;
@@ -266,4 +279,309 @@ li{
 .social li{
     padding: 0 5px;
     margin-left: 5px;
+}
+
+.social li a:hover{
+    opacity: 0.9;
+}
+
+/* Links */
+
+.links{
+    background-color: var(--colour3);
+    font-size: 12px;
+    padding: 35px 0;
+    color: var(--colour2);
+    margin-top: 50px;
+}
+
+.links-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.links ul{
+    display: flex;
+    flex-direction: column;
+}
+.links li{
+    line-height: 2.8;
+}
+
+.links li h3{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.links li a{
+    color: var(--colour2);
+}
+
+.links li a:hover{
+    color: var(--colour0);
+    text-decoration: underline;
+}
+
+/* Footer */
+
+.footer{
+    padding: 20px 0;
+    background-color: #F2F2F2;
+    font-size: 11px;
+    color: var(--colour2);
+}
+
+.footer-inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-inner div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footer-inner div i{
+    margin-right: 5px;
+}
+
+.footer-inner div a:hover{
+    text-decoration: underline;
+}
+
+.footer-inner ul li{
+    padding: 0 10px;
+    margin-bottom: 5px;
+}
+
+.footer-inner a{
+    color: var(--colour2);
+}
+
+.footer-inner a:hover{
+    color: var(--colour0);
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media screen and (min-width: 800px){
+    .container{
+        width: 95%;
+    }
+
+    .showcase div{
+        padding: 0 70px;
+    }
+
+    .showcase p{
+        padding: 40px 0;
+    }
+
+    #xbox .content{
+        width: 40%;
+        padding: 150px 0 0 80px;
+    }
+}
+@media screen and (max-width: 760px){
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Burguer */
+    .burger{
+        display: block;
+    }
+
+    .burger i{
+        color: var(--colour0);
+    }
+
+    .burger:hover{
+        opacity: 0.5;
+    }
+
+    .main-nav .img-logo{
+        margin: 0 auto;
+    }
+
+    .dropdown{
+        display: none;
+    }
+
+    .main-nav ul.main-menu{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: var(--colour3);
+        width: 100%;
+        height: 100%;
+        transform: translateX(-1000px);
+        border-right: #ccc 1px solid;
+        opacity: 0.9;
+        padding: 30px;
+        z-index:  3;
+    }
+
+    .main-nav ul.main-menu li{
+        padding: 10px;
+        border-bottom: #ccc solid 1px;
+        font-size: 14px;
+    }
+
+    .main-menu li a:hover{
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu li:last-child{
+        border-bottom: 0;
+    }
+
+    .main-nav ul.main-menu.show{
+        transform: translateX(-20px);
+    }
+
+    .main-nav .right-menu{
+        display: none;
+    }
+    /* Showcase */
+
+    .showcase{
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        margin-bottom: 375px;
+    }
+
+    .showcase div{
+        height: 50vh;
+        position: absolute;
+        background-color: var(--colour4);
+        top: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 45px;
+    }
+
+    .showcase p{
+        margin: 0;
+        
+    }
+
+    /* PrimaryArea */
+    
+    #primaryArea .menu-icons{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #primary .menu-icons li{
+        padding: 0 10px;
+    }
+
+    #primaryArea .menu-icons a{
+        display: flex;
+        flex-direction: row;
+        word-wrap: none;
+        width: auto;
+        padding: 10px 0;
+    }
+
+    .menu-icons img{
+        margin: 0 10px;
+        width: 20px;
+    }
+
+    /* Home-Cards */
+
+    .home-cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 30px;
+    }
+
+    /* X-box */
+    .xbox .content p {
+  
+    }
+
+    .xbox{
+        background: url(img/xbox2.png) no-repeat center center/cover;
+        height: 50vh;
+        position: relative;
+        margin-bottom: 375px;
+    }
+    
+    #xbox .content{
+        background: var(--colour4);
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 80px 0;
+    }
+
+    /* home-cards-02 */
+
+    #home-cards-02 h2{
+        margin: 10px 30px;
+    }
+
+    /* Follow */
+
+    .follow p{
+        margin: 0 30px;
+    }
+
+    /* Links */
+
+    .links{
+        padding: 20px 30px;
+    }
+
+    .links-inner{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Footer */
+    .footer{
+        padding: 20px 30px;
+    }
+
+    .footer-inner{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-inner div i{
+        padding: 10px 0;
+        
+    }
+}
+
+@media screen and (max-width: 540px){
+    .home-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .links-inner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+    }
 }
