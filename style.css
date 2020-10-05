@@ -1,5 +1,8 @@
 :root{
     --colour0: #262626;
+    --colour1: #0067B8;
+    --colour2: #616161;
+    --colour3: #F2F2F2;
 }
 
 *{
@@ -116,7 +119,7 @@ li{
 .showcase{
     margin-top: 20px;
     height: 400px;
-    background: url(/img/microsoft-img-01.jfif) no-repeat center center/cover;
+    background: url(/img/win-img-01.jfif) no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -133,4 +136,134 @@ li{
 .showcase p{
     margin-right: 620px;
     font-size: 15px;
+}
+
+/* PrimaryArea */
+
+#primaryArea{
+    margin: 80px 0;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.menu-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+ 
+.menu-icons li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 130px;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.menu-icons li img{
+    margin-bottom: 5px;
+}
+
+/* Home Cards - 01 */
+
+.home-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+
+}
+
+.home-cards img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.home-cards div:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.home-cards h3{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.home-cards p{
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.home-cards a{
+    color: var(--colour1);
+    font-size: 15px;
+    font-weight: 600;
+    
+}
+
+.home-cards span, .home-cards i{
+    transition: all 0.1s ease-in;
+}
+
+.home-cards i{
+    font-size: 10px;
+    margin-left: 6px;
+    font-weight: 900;
+    color: var(--colour1);
+}
+
+.home-cards span:hover{
+    border-bottom: 2px solid var(--colour1);
+}
+
+.home-cards a:hover i{
+    margin-left: 10px;
+}
+
+/* Xbox */
+#xbox{
+    margin: 60px 0;
+    height: 450px;
+    background: url(/img/xbox-fullImg.png) no-repeat center center/cover;
+}
+
+#xbox .content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 40%;
+    padding: 150px 0 0 80px;
+}
+
+/* Home Cards 02 */
+#home-cards-02{
+    margin: 30px 0;
+}
+
+#home-cards-02 h2{
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+/* Social Medias */
+.follow{
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+}
+
+.follow p{
+    font-size: 15px;
+    color: var(--colour2);
+}
+
+.social li{
+    padding: 0 5px;
+    margin-left: 5px;
 }
