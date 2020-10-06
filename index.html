@@ -27,12 +27,86 @@
                 <li><a href="">Deals</a></li>
                 <li><a href="">Support</a></li>
             </ul>
-            
+            <div class="dropdown">
+                <button class="dropdownbtn"><span>All Microsoft</span><i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i></button>
+                <div id="DropdownEffect" class="dropdown-content">
+                    <div class="header">
+                        <ul>
+                            <li><a href="">Microsoft 365</a></li>
+                            <li><a href="">Office</a></li>
+                            <li><a href="">Windows</a></li>
+                            <li><a href="">Surface</a></li>
+                            <li><a href="">Xbox</a></li>
+                            <li><a href="">Deals</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="main-content">
+                        <ul class="drop-menu">
+                            <h5>Software</h5>
+                            <li><a href="">Windows Apps</a></li>
+                            <li><a href="">OneDrive</a></li>
+                            <li><a href="">Outlook</a></li>
+                            <li><a href="">Skype</a></li>
+                            <li><a href="">OneNote</a></li>
+                            <li><a href="">Microsoft Teams</a></li>
+                        </ul>
+                        <ul class="drop-menu">
+                            <h5>PCs & Devices</h5>
+                            <li><a href="">Computers</a></li>
+                            <li><a href="">shop Xbox</a></li>
+                            <li><a href="">Accessories</a></li>
+                            <li><a href="">VR & mixed reality</a></li>
+                            <li><a href="">Phones</a></li>
+                        </ul>
+                        <ul class="drop-menu">
+                            <h5>Entertainment</h5>
+                            <li><a href="">Xbox Game Pass Ultimate</a></li>
+                            <li><a href="">Xbox Live Gold</a></li>
+                            <li><a href="">Xbox games</a></li>
+                            <li><a href="">PC games</a></li>
+                            <li><a href="">Windows digital games</a></li>
+                            <li><a href="">Movies & TV</a></li>
+                        </ul>
+                        <ul class="drop-menu">
+                            <h5>Bussiness</h5>
+                            <li><a href="">Microsoft Azure</a></li>
+                            <li><a href="">Microsoft Dynamics 365</a></li>
+                            <li><a href="">Microsoft 365</a></li>
+                            <li><a href="">Microsoft Industry</a></li>
+                            <li><a href="">Data platform</a></li>
+                            <li><a href="">Microsoft Advertising</a></li>
+                            <li><a href="">Power Platform</a></li>
+                            <li><a href="">Data platform</a></li>
+                        </ul>
+                        <ul class="drop-menu">
+                            <h5>Developer & IT</h5>
+                            <li><a href="">Net</a></li>
+                            <li><a href="">Visual Studio</a></li>
+                            <li><a href="">Windows Server</a></li>
+                            <li><a href="">Windows Dev Center</a></li>
+                            <li><a href="">Docs</a></li>
+                            <li><a href="">Power Apps</a></li>
+                        </ul>
+                        <ul class="drop-menu">
+                            <h5>Other</h5>
+                            <li><a href="">Microsoft Rewards</a></li>
+                            <li><a href="">Free downloads & security</a></li>
+                            <li><a href="">Education</a></li>
+                            <li><a href="">virtual workshops and training</a></li>
+                            <li><a href="">Gift cards</a></li>
+                            <li><a href="">Licensing</a></li>
+                        </ul>
+                    </div>
+                    <div class="drop-footer">
+                        <a href="">VIEW SITEMAP <i class="ms-Icon ms-Icon--ChevronRight" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
             <ul class="right-menu">
-                <li class="dropdown"><a href="" class="">All Microsoft </a><i class="ms-Icon ms-Icon--ChevronDown" aria-hidden="true"></i>
-                </li>
-                <li><a href=""><i class="ms-Icon ms-Icon--Search" aria-hidden="true"></i></a></li>
-                <li><a href=""><i class="ms-Icon ms-Icon--ShoppingCart" aria-hidden="true"></i></a></li>
+                
+                <abbr title="Search Microsoft.com"><li><a href=""><i class="ms-Icon ms-Icon--Search" aria-hidden="true"></i></a></li></abbr>
+                <abbr title="0 items in shopping cart"><li><a href=""><i class="ms-Icon ms-Icon--ShoppingCart" aria-hidden="true"></i></a></li></abbr>
             </ul>
         </nav>
         <header>
@@ -211,6 +285,8 @@
         </footer>
         <script>
             document.querySelector('.burger').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+
+            document.querySelector('.dropdownbtn').addEventListener('click', () => document.querySelector('.dropdown-content').classList.toggle('show'));
         </script>
 </body>
 </html>

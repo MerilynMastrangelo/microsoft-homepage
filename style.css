@@ -66,9 +66,14 @@ a .img-logo{
     border-bottom: 2px solid var(--colour0);
 }
 
-.dropdown{
+.dropdownbtn{
     margin-right: 30px;
     padding-bottom: 2px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    outline: none;
 }
 
 /* Icon */
@@ -76,14 +81,77 @@ a .img-logo{
     font-size: 1rem;
 }
 
+/* Dropdown */
+
 .ms-Icon--ChevronDown{
     font-size: 8px;
-    margin-left: 2.5px;
+    margin-left: 8px;
 }
 
-.dropdown a:hover{
+.dropdownbtn span:hover{
     border-bottom: 2px solid var(--colour0);
 }
+
+.dropdown .header{
+    border-bottom: 2px solid var(--colour4);
+    padding: 0 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 5%;
+    width: 1230px;
+    height: 66%;
+    background-color: var(--colour3);
+    z-index: 3;
+    border-bottom: 2px solid var(--colour0);
+}
+
+.dropdown-content .main-content{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+
+.dropdown-content .drop-menu{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content .drop-menu h5{
+    font-size: 13px;
+    font-weight: 500;
+    padding: 0 25px;
+}
+
+.dropdown-content li{
+    padding: 60px 0;
+}
+
+.dropdown-content a{
+    color: var(--colour0);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    text-decoration: underline;
+}
+
+.dropdown-content .drop-footer{
+    text-align: center;
+    background-color: var(--colour4);
+}
+
+.dropdown-content .drop-footer i{
+    font-size: 11px;
+}
+
+.show {display: block;}
 
 /* Button */
 
@@ -411,7 +479,7 @@ a .img-logo{
         margin: 0 auto;
     }
 
-    .dropdown{
+    .dropdownbtn{
         display: none;
     }
 
